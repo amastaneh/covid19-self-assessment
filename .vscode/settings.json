@@ -1,0 +1,29 @@
+{
+    // 202011051741-ama: Sass Compiler
+    // Press F1 or ctrl+shift+P and type Live Sass: Compile Sass - Without Watch Mode 
+    // to compile Sass or Scss for one time.
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": null
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "style/index.scss"
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}

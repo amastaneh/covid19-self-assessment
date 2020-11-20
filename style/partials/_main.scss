@@ -2,14 +2,19 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     background-color: white;
     min-height: 100vh;
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    padding: 16px 0 36px 0;
-    background-image: url(https://pi.invendr.com/templates/default/graphics/svi_logs.png);
-    background-position: bottom;
+}
+
+body {
+    padding: 120px 16px 32px 16px;
+    background-image: url(../img/bar-logos.png);
+    background-position: top;
     background-repeat: no-repeat;
+    background-size: 800px;
 }
 
 .blog-slider {
@@ -309,7 +314,7 @@ input[type=submit] {
     font-weight: bold;
     text-transform: uppercase;
     color: #696666;
-    background: url(./images/envelope.png) no-repeat scroll 0.75em 0.07em transparent;
+    background: url(../img/envelope.png) no-repeat scroll 0.75em 0.07em transparent;
     background-size: 54px 204px;
     border-radius: 15px;
     border: 0.15em solid #696666;
