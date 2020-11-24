@@ -6,16 +6,63 @@
             "Bassam Debek",
             "Farah Ahmed"
         ],
-        "last-updated": "2020-11-23",
-        "locale": "en"
+        "last-updated": "2020-11-24",
+        "locale": "fr"
     },
+    "header-title": "Wellness Check",
+    "header-body-1": "To slow the spread of COVID 19 and ensure a safe environment for clients and team members, please ensure you complete this assessment at least 60 minutes prior to arriving for your scheduled work shift. Should you experience an onset of any symptoms while at work, please report this to your Team Lead right away so that you can immediately isolate",
+    "header-body-2": "Pour en savoir plus sur la COVID-19, consultez le ",
+    "header-body-3": "Web du gouvernement du Canada (COVID-19).",
+    "header-body-3-url": "https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html",
+    "header-button-title": "Start self-assessment",
+    "header-button-url": "#questionnaire",
+
+    "question-1-title": "Avez-vous les symptômes suivants:",
+    "question-1-items-01": "Difficultés respiratoires graves (par exemple, difficulté à respirer ou énonciation d’un mot à la fois)",
+    "question-1-items-02": "De fortes douleurs à la poitrine",
+    "question-1-items-03": "Avoir beaucoup de mal à se réveiller",
+    "question-1-items-04": "Être confus",
+    "question-1-items-05": "Perte de conscience",
+
+    "question-2-title": "Avez-vous les symptômes suivants:",
+    "question-2-items-01": "Essoufflement léger à modéré",
+    "question-2-items-02": "Incapacité à vous allonger en raison de difficultés respiratoires",
+    "question-2-items-03": "Problèmes de santé chroniques que vous avez du mal à gérer en raison de difficultés respiratoires",
+
+    "question-3-title": "Avez-vous les symptômes suivants:",
+    "question-3-items-01": "Apparition ou aggravation de toux",
+    "question-3-items-02": "Essoufflement ou difficulté respiratoire",
+    "question-3-items-03": "Température égale ou supérieure à 38 °C",
+    "question-3-items-04": "Sensation de fièvre",
+    "question-3-items-05": "Frissons",
+    "question-3-items-06": "Fatigue ou faiblesse",
+    "question-3-items-07": "Douleurs musculaires ou courbatures",
+    "question-3-items-08": "Perte de l'odorat ou du goût",
+    "question-3-items-09": "Mal de tête",
+    "question-3-items-10": "Symptômes gastro- intestinaux (douleur abdominale, diarrhée, vomissements)",
+    "question-3-items-11": "Malaises intenses",
+
+    "question-4-title": "Avez-vous voyagé à l’étranger (y compris aux États-Unis) au cours des 14 derniers jours?",
+
+    "question-5-title": "Au cours des 14 derniers jours, avez-vous fourni des soins ou eu un contact étroit avec un cas symptomatique confirmé ou suspecté de la COVID-19?",
+    "question-5-title-sub": "Une personne ayant eu des contacts étroits est définie comme:",
+    "question-5-items-01": "Une personne qui a fourni des soins à la personne malade et comprend les travailleurs de la santé, les membres de la famille ou autres soignants, ou une personne qui a eu d’autres contacts physiques étroits similaires sans utilisation cohérente et appropriée d’équipements de protection individuelle; ou",
+    "question-5-items-02": "Une personne qui a vécu avec la personne malade ou a eu un contact étroit et prolongé avec celle-ci (à moins de deux mètres) pendant qu’elle était contagieuse; ou",
+    "question-5-items-03": "Une personne qui a eu un contact direct avec des fluides corporels infectieux de la personne malade (qui était, par exemple, à proximité lorsque la personne malade a toussé ou éternué) sans porter l’équipement de protection individuelle recommandé",
+
+    "question-6-title": "Avez-vous eu un contact étroit avec une personne qui a voyagé à l’étranger au cours des 14 derniers jours et qui est tombée malade (apparition ou aggravation de toux ; essoufflement ou difficulté respiratoire ; température égale ou supérieure à 38 °C ; sensation de fièvre; frissons ; fatigue ou faiblesse ; douleurs musculaires ou courbatures ; perte de l'odorat ou du goût ; mal de tête ; symptômes gastro- intestinaux (douleur abdominale, diarrhée, vomissements) ; malaises intenses)?",
+    "question-6-items-01": "New or worsening cough; shortness of breath or difficulty breathing; temperature equal to or over 38°C",
+    "question-6-items-02": "Feeling feverish",
+    "question-6-items-03": "Chills; fatigue or weakness",
+    "question-6-items-04": "Muscle or body aches; new loss of smell or taste",
+    "question-6-items-05": "Headache",
+    "question-6-items-06": "Gastrointestinal symptoms such as abdominal pain, diarrhea, vomiting",
+    "question-6-items-07": "Feeling very unwell",
+
+    "button-submit": "Soumettre",
+    "button-yes": "Oui",
+    "button-no": "Non",
+
     "language-alt": "English",
-    "language-alt-url": "/?hl=en",
-    "header-title": "111COVID-19 Self-Assessment Tool",
-    "header-body-1": "11To slow the spread of COVID 19 and ensure a safe environment for clients and team members, please ensure you complete this assessment at least 60 minutes prior to arriving for your scheduled work shift. Should you experience an onset of any symptoms while at work, please report this to your Team Lead right away so that you can immediately isolate",
-    "header-body-2": "111For more information on COVID-19, refer to the Government of Canada COVID-19 website.",
-    "header-info": "11For more information on COVID-19, refer to the Government of Canada COVID-19 website.",
-    "header-info-href": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html",
-    "header-button-title": "11Start Now",
-    "header-button-url": "111https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html"
+    "language-alt-url": "./?hl=en"
 }
