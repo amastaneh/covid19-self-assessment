@@ -44,11 +44,6 @@ $(document).ready(function($) {
         History.Adapter.bind(window, 'statechange', function() {
             updateLanguage();
         });
-        // Language combobox
-        $('select.language-alt').on('change', function(e) {
-            e.preventDefault();
-            History.pushState(null, null, "?hl=" + this.value);
-        });
         // Change radio buttons
         $('input[type=radio]').change(function() {
             var Value = this.value;
@@ -71,13 +66,19 @@ $(document).ready(function($) {
         // Press Submit
         $("form").submit(function(event) {
             event.preventDefault();
-            let Result = new Array(6);
+            let Result = new Array(7);
+            Result[0] = url('?user');
+            let SumResult = 0;
+            debugger;
             $('input[type=radio]:checked').each(function() {
                 var Value = this.value;
                 var Question = $(this).data('question');
-                Result[Question - 1] = Value;
+                SumResult += Value;
+                Result[Question] = Value;
             });
-            alert("Data for save: " + Result)
+            var ResultComment = (SumResult > 0) ? "result-yes" : "result-no";
+            ResultComment = $.i18n(ResultComment);
+            alert(ResultComment + "\r\n" + Result);
         });
 
         $('a#questionnaire-start').click(function() {
