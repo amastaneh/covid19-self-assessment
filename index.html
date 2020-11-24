@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="utf-8">
+    <!-- jQuery 3.5 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jQuery i18n -->
     <script src="js/lib/jquery.i18n/jquery.i18n.js"></script>
     <script src="js/lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
     <script src="js/lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
@@ -14,6 +17,11 @@
     <script src="js/lib/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
     <script src="js/lib/js-url-2.6.3/dist/jquery-url.min.js"></script>
 
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <!-- Local Script/Style -->
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="./style/main.min.css">
 </head>
@@ -176,10 +184,13 @@
                 </div>
             </div>
         </fieldset>
-        <center id="question-box-submit">
-            <hr/>
-            <input type="submit" data-i18n="button-submit"></input>
-        </center>
+        <!-- Modal HTML embedded directly into document -->
+        <div id="modal-result" class="modal">
+            <center>
+                <p id="modal-text"></p><br/>
+                <input type="submit" data-i18n="button-submit"></input>
+            </center>
+        </div>
     </form>
     <p><br/></p>
 </body>

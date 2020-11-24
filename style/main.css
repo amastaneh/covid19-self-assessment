@@ -484,7 +484,7 @@ input[type=submit] {
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  zoom: 55%;
+  zoom: 33%;
 }
 
 input[type=submit]:hover {
