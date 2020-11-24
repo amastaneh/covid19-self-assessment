@@ -44,9 +44,9 @@ var ShowSubmitPopup = function() {
     var ResultComment = (questionnaire_first_yes > 0) ? "result-yes" : "result-no";
     $("#modal-text").text($.i18n(ResultComment));
     $("#modal-result").modal({
-        escapeClose: false,
-        clickClose: false,
-        showClose: false
+        escapeClose: true,
+        clickClose: true,
+        showClose: true
     });
 
 }

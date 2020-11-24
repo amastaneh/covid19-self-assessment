@@ -10,6 +10,11 @@ body {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
+html a,
+body a {
+  text-decoration: none;
+}
+
 body {
   padding: 120px 16px 32px 16px;
   background-image: url(../img/bar-logos.png);
@@ -246,13 +251,13 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #0d0925;
-  margin-bottom: 20px;
 }
 
 .blog-slider__text {
   color: #4e4a67;
   margin-bottom: 30px;
   line-height: 1.5em;
+  font-size: 88%;
 }
 
 .blog-slider__button {
@@ -406,7 +411,6 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #0d0925;
-  margin-bottom: 20px;
 }
 
 .questionnaire__text {
@@ -469,16 +473,15 @@ body {
   margin-bottom: 60px;
 }
 
-input[type=submit] {
+input[type=submit],
+a.cancel {
   margin-left: 0.5em;
   height: 2.5em;
-  padding: 0.2em 1em 0.2em 2.25em;
+  padding: 0.55em 1em;
   font-size: 3em;
   font-weight: bold;
   text-transform: uppercase;
   color: #696666;
-  background: url(../img/envelope.png) no-repeat scroll 0.75em 0.07em transparent;
-  background-size: 54px 204px;
   border-radius: 15px;
   border: 0.15em solid #696666;
   cursor: pointer;
@@ -487,7 +490,8 @@ input[type=submit] {
   zoom: 33%;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover,
+a.cancel:hover {
   color: #fff;
   background-color: #080e1e;
   border-color: #080e1e;
@@ -496,10 +500,17 @@ input[type=submit]:hover {
   transition: all 0.3s ease;
 }
 
-input[type=submit]:focus {
+input[type=submit]:focus,
+a.cancel:focus {
   background-position: 2em -4em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+input[type=submit] {
+  padding-left: 2.25em;
+  background: url(../img/envelope.png) no-repeat scroll 0.75em 0.07em transparent;
+  background-size: 54px 204px;
 }
 
 hr {
