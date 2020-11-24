@@ -102,7 +102,6 @@ $(document).ready(function($) {
                     flag: 'wellness_check'
                 })
                 .done(function(data) {
-                    alert(ResultComment + "\r\n" + Result);
                     window.close();
                 })
                 .fail(function() {
