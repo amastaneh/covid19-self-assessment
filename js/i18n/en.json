@@ -9,14 +9,60 @@
         "last-updated": "2020-11-23",
         "locale": "en"
     },
-    "header-title": "COVID-19 Self-Assessment Tool",
+    "header-title": "Wellness Check",
     "header-body-1": "To slow the spread of COVID 19 and ensure a safe environment for clients and team members, please ensure you complete this assessment at least 60 minutes prior to arriving for your scheduled work shift. Should you experience an onset of any symptoms while at work, please report this to your Team Lead right away so that you can immediately isolate",
     "header-body-2": "For more information on COVID-19, refer to the ",
     "header-body-3": "Government of Canada COVID-19 website.",
     "header-body-3-url": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html",
-    "header-button-title": "Start Now",
+    "header-button-title": "Start self-assessment",
     "header-button-url": "#questionnaire",
+
     "question-1-title": "Are you experiencing any of the following:",
+    "question-1-items-01": "Severe difficulty breathing (e.g. struggling to breathe or speaking in single words)",
+    "question-1-items-02": "Severe chest pain",
+    "question-1-items-03": "Having a very hard time waking up",
+    "question-1-items-04": "Feeling confused",
+    "question-1-items-05": "Losing consciousness",
+
+    "question-2-title": "Are you experiencing any of the following:",
+    "question-2-items-01": "Mild to moderate shortness of breath",
+    "question-2-items-02": "Inability to lie down because of difficulty breathing",
+    "question-2-items-03": "Chronic health conditions that you are having difficulty managing because of difficulty breathing",
+
+    "question-3-title": "Are you experiencing any of the following:",
+    "question-3-items-01": "New or worsening cough",
+    "question-3-items-02": "Shortness of breath or difficulty breathing",
+    "question-3-items-03": "Temperature equal to or over 38°C",
+    "question-3-items-04": "Feeling feverish",
+    "question-3-items-05": "Chills",
+    "question-3-items-06": "Fatigue or weakness",
+    "question-3-items-07": "Muscle or body aches",
+    "question-3-items-08": "New loss of smell or taste",
+    "question-3-items-09": "Headache",
+    "question-3-items-10": "Gastrointestinal symptoms (abdominal pain, diarrhea, vomiting)",
+    "question-3-items-11": "Feeling very unwell",
+
+    "question-4-title": "Have you travelled to any countries outside Canada (including the United States) within the last 14 days?",
+
+    "question-5-title": "Within the last 14 days have you provided care or have close contact with a symptomatic person known or suspected to have COVID-19?",
+    "question-5-title-sub": "A close contact is defined as a person who:",
+    "question-5-items-01": "Provided care for the individual, including healthcare workers, family members or other caregivers, or who had other similar close physical contact without consistent and appropriate use of personal protective equipment; or",
+    "question-5-items-02": "Lived with or otherwise had close prolonged contact (within 2 metres) with the person while they were infectious; or",
+    "question-5-items-03": "Had direct contact with infectious bodily fluids of the person (e.g. was coughed or sneezed on) while not wearing recommended personal protective equipment",
+
+    "question-6-title": "Have you had close contact with a person who travelled outside of Canada in the last 14 days who has become ill or experienced the following conditions?",
+    "question-6-items-01": "New or worsening cough; shortness of breath or difficulty breathing; temperature equal to or over 38°C",
+    "question-6-items-02": "Feeling feverish",
+    "question-6-items-03": "Chills; fatigue or weakness",
+    "question-6-items-04": "Muscle or body aches; new loss of smell or taste",
+    "question-6-items-05": "Headache",
+    "question-6-items-06": "Gastrointestinal symptoms such as abdominal pain, diarrhea, vomiting",
+    "question-6-items-07": "Feeling very unwell",
+
+    "button-submit": "Submit",
+    "button-yes": "Yes",
+    "button-no": "No",
+
     "language-alt": "Français",
     "language-alt-url": "./?hl=fr"
 }
