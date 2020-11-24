@@ -44,9 +44,9 @@ var ShowSubmitPopup = function() {
     var ResultComment = (questionnaire_first_yes > 0) ? "result-yes" : "result-no";
     $("#modal-text").text($.i18n(ResultComment));
     $("#modal-result").modal({
-        escapeClose: false,
-        clickClose: false,
-        showClose: false
+        escapeClose: true,
+        clickClose: true,
+        showClose: true
     });
 
 }
@@ -102,7 +102,6 @@ $(document).ready(function($) {
                     flag: 'wellness_check'
                 })
                 .done(function(data) {
-                    alert(ResultComment + "\r\n" + Result);
                     window.close();
                 })
                 .fail(function() {
