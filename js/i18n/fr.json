@@ -60,11 +60,11 @@
     "question-6-items-06": "Symptômes gastro-intestinaux comme de la douleur abdominale, de la diarrhée, des vomissements",
     "question-6-items-07": "Malaises intenses",
 
-    "result-yes": "[FR] If you are instructed to isolate, please notify your Team Lead by phone right away.",
-    "result-no": "[FR] Thank you, you are good to go to the office.",
+    "result-yes": "Veuillez informer immédiatement votre chef d'équipe par téléphone.",
+    "result-no": "Merci, vous êtes bon pour commencer votre quart de travail.",
 
-    "button-submit": "SOUMETTRE",
-    "button-cancel": "[FR] Cancel",
+    "button-submit": "Soumettre",
+    "button-cancel": "Annuler",
     "button-yes": "Oui",
     "button-no": "Non",
 
