@@ -10,11 +10,11 @@
         "locale": "en"
     },
     "header-title": "Wellness Check",
-    "header-body-1": "To slow the spread of COVID 19 and ensure a safe environment for clients and team members, please ensure you complete this assessment at least 60 minutes prior to arriving for your scheduled work shift. Should you experience an onset of any symptoms while at work, please report this to your Team Lead right away so that you can immediately isolate",
+    "header-body-1": "To slow the spread of COVID 19 and ensure a safe environment for clients and team members, please ensure you complete this assessment at least 60 minutes prior to arriving for your scheduled work shift. Should you experience an onset of any symptoms while at work, please report this to your Team Lead right away so that you can immediately isolate.",
     "header-body-2": "For more information on COVID-19, refer to the Government of Canada COVID-19 ",
     "header-body-3": "website",
-    "header-body-4": ".",
     "header-body-3-url": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html",
+    "header-body-4": ".",
     "header-button-title": "Start self-assessment",
     "header-button-url": "#questionnaire",
 
@@ -60,7 +60,7 @@
     "question-6-items-06": "Gastrointestinal symptoms such as abdominal pain, diarrhea, vomiting",
     "question-6-items-07": "Feeling very unwell",
 
-    "result-yes": "If you are instructed to isolate, please notify your Team Lead by phone right away.",
+    "result-yes": "Please notify your Team Lead by phone right away.",
     "result-no": "Thank you, you are good to go to the office.",
 
     "button-submit": "Submit",
