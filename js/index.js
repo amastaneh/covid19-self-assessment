@@ -79,10 +79,11 @@ $(document).ready(function($) {
             var Value = this.value;
             var Question = $(this).data('question');
             if (Value == 1) {
-                questionnaire_first_yes = Question
                 HideQuestionBoxFrom(Question);
+                questionnaire_first_yes = Question;
                 ShowSubmitPopup();
             } else if (Question == 6) {
+                questionnaire_first_yes = 0;
                 ShowSubmitPopup();
             } else {
                 ShowQuestionBox(Question + 1);
