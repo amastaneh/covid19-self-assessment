@@ -1,5 +1,9 @@
 var questionnaire_max_question_visited = 0;
+var questionnaire_first_yes = 0;
 
+/**
+ * Upadte and re-fill strings with current localization
+ */
 var updateLanguage = function() {
     var lang = url('?hl');
     if (lang) {
@@ -11,14 +15,10 @@ var updateLanguage = function() {
         $(this).attr("href", $.i18n(hrefValue));
     });
 };
-var ShowSubmit = function() {
-    $("#question-box-submit").show();
-}
-var HideSubmit = function() {
-    if (questionnaire_max_question_visited < 6) {
-        $("#question-box-submit").hide();
-    }
-}
+
+/**
+ * @param {int} index - Show quistion boxes with index of them started from 1
+ */
 var ShowQuestionBox = function(index) {
     if (index > questionnaire_max_question_visited) questionnaire_max_question_visited = index;
     for (var i = 1; i <= questionnaire_max_question_visited; i++) {
@@ -26,12 +26,41 @@ var ShowQuestionBox = function(index) {
     }
     $('html, body').animate({ scrollTop: $("fieldset#question-box-" + questionnaire_max_question_visited).offset().top - 50 }, 'slow');
 }
+
+/**
+ * 
+ * @param {*} index 
+ */
 var HideQuestionBoxFrom = function(index) {
     for (var i = 6; i > index; i--) {
         $("fieldset#question-box-" + i).hide();
     }
 }
 
+/**
+ * jQuery show modal result box
+ */
+var ShowSubmitPopup = function() {
+    var ResultComment = (questionnaire_first_yes > 0) ? "result-yes" : "result-no";
+    $("#modal-text").text($.i18n(ResultComment));
+    $("#modal-result").modal({
+        escapeClose: false,
+        clickClose: false,
+        showClose: false
+    });
+
+}
+
+/**
+ * jQuery modal fade-in animation
+ */
+$("#fade").modal({
+    fadeDuration: 100
+});
+
+/**
+ * The page Document Object Model (DOM) is ready for JavaScript code
+ */
 $(document).ready(function($) {
     'use strict';
     $.i18n({
@@ -41,6 +70,7 @@ $(document).ready(function($) {
         fr: 'js/i18n/fr.json'
     }).done(function() {
         updateLanguage();
+        // Click on langauge link
         History.Adapter.bind(window, 'statechange', function() {
             updateLanguage();
         });
@@ -48,14 +78,14 @@ $(document).ready(function($) {
         $('input[type=radio]').change(function() {
             var Value = this.value;
             var Question = $(this).data('question');
-            if ((Question == 1 || Question == 2) && Value == 1) {
+            if (Value == 1) {
+                questionnaire_first_yes = Question
                 HideQuestionBoxFrom(Question);
-                ShowSubmit();
+                ShowSubmitPopup();
             } else if (Question == 6) {
-                ShowSubmit();
+                ShowSubmitPopup();
             } else {
                 ShowQuestionBox(Question + 1);
-                HideSubmit();
             }
         });
         // Press Start
@@ -64,26 +94,20 @@ $(document).ready(function($) {
             ShowQuestionBox(1);
         });
         // Press Submit
-        $("form").submit(function(event) {
+        $("input[type=submit]").click(function(event) {
             event.preventDefault();
-            let Result = new Array(7);
-            Result[0] = url('?user');
-            let SumResult = 0;
-            debugger;
-            $('input[type=radio]:checked').each(function() {
-                var Value = this.value;
-                var Question = $(this).data('question');
-                SumResult += Value;
-                Result[Question] = Value;
-            });
-            var ResultComment = (SumResult > 0) ? "result-yes" : "result-no";
-            ResultComment = $.i18n(ResultComment);
-            alert(ResultComment + "\r\n" + Result);
-        });
-
-        $('a#questionnaire-start').click(function() {
-            $('#questionnaire').show();
-            ShowQuestionBox(1);
+            $.post("https://pi.invendr.com/dev2/update.php", {
+                    user: url('?user'),
+                    results: questionnaire_first_yes,
+                    flag: 'wellness_check'
+                })
+                .done(function(data) {
+                    alert(ResultComment + "\r\n" + Result);
+                    window.close();
+                })
+                .fail(function() {
+                    alert("Server not working!");
+                });
         });
     });
 });
