@@ -73,7 +73,6 @@ $(document).ready(function($) {
             event.preventDefault();
             let Result = new Array(6);
             $('input[type=radio]:checked').each(function() {
-                debugger;
                 var Value = this.value;
                 var Question = $(this).data('question');
                 Result[Question - 1] = Value;
