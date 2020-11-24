@@ -11,15 +11,23 @@
     <script src="/js/lib/jquery.i18n/jquery.i18n.parser.js"></script>
     <script src="/js/lib/jquery.i18n/jquery.i18n.emitter.js"></script>
     <script src="/js/lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script src="./js/index.js"></script>
-    <link rel="stylesheet" href="./style/index.min.css">
+    <script src="js/lib/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
+    <script src="js/lib/js-url-2.6.3/dist/jquery-url.min.js"></script>
+
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="./style/main.min.css">
 </head>
 
 <body>
-    <select class="custom-select" id="switch-locale" data-placeholder="Choose a Language...">
-		<option value="en">English</option>
-		<option value="fr">français</option>
-	</select>
+    <span id="language-alt">
+        <a target="_self" data-i18n="language-alt" data-i18n-href="language-alt-url"></a>
+        <select class="language-alt" data-placeholder="Choose a Language...">
+		    <option value="en">English</option>
+		    <option value="fr">français</option>
+        </select>
+        <?php echo '<p>Hello World</p>'; ?> 
+    </span>
+
     <section class="container">
         <div class="blog-slider">
             <div class="blog-slider__wrp swiper-wrapper">
@@ -28,12 +36,15 @@
                         <div class="shadow"></div>
                     </div>
                     <div class="blog-slider__content">
-                        <div class="blog-slider__title">{{header-title}}</div>
+                        <div class="blog-slider__title" data-i18n="header-title"></div>
                         <div class="blog-slider__text">
                             <p data-i18n="header-body-1"></p>
-                            <p data-i18n="header-body-2"></p>
+                            <p>
+                                <span data-i18n="header-body-2"></span>
+                                <a target="_blank" data-i18n="header-body-3" data-i18n-href="header-body-3-url"></a>
+                            </p>
                         </div>
-                        <a target="_blank" href="" class="blog-slider__button" data-i18n="header-button-title"></a>
+                        <a target="_self" href="" class="blog-slider__button" data-i18n="header-button-title" data-i18n-href="header-button-url"></a>
                     </div>
                 </div>
             </div>

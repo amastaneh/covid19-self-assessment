@@ -15,7 +15,7 @@
         }
     ],
     "liveSassCompile.settings.includeItems": [
-        "style/index.scss"
+        "style/main.scss"
     ],
     "liveSassCompile.settings.excludeList": [
         "**/node_modules/**",
