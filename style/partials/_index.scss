@@ -148,6 +148,9 @@ body {
         margin-bottom: 30px;
         line-height: 1.5em;
         font-size: 88%;
+        a {
+            text-decoration: underline;
+        }
     }
     &__button {
         display: inline-flex;

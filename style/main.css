@@ -260,6 +260,10 @@ body {
   font-size: 88%;
 }
 
+.blog-slider__text a {
+  text-decoration: underline;
+}
+
 .blog-slider__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
