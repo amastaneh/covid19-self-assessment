@@ -43,13 +43,13 @@
     "question-3-items-10": "Symptômes gastro-intestinaux (douleur abdominale, diarrhée, vomissements)",
     "question-3-items-11": "Malaises intenses",
 
-    "question-4-title": "Avez-vous voyagé à l’extérieur du Canada (y compris aux États-Unis) au cours des 14 derniers jours?",
+    "question-4-title": "Au cours des 14 derniers jours, avez-vous fourni des soins ou eu un contact étroit avec un cas symptomatique confirmé ou suspecté de la COVID-19?",
+    "question-4-title-sub": "Une personne ayant eu des contacts étroits est définie comme:",
+    "question-4-items-01": "Une personne qui a fourni des soins à la personne malade et comprend les travailleurs de la santé, les membres de la famille ou autres soignants, ou une personne qui a eu d’autres contacts physiques étroits similaires ou sans utilisation cohérente et appropriée d’équipements de protection individuelle; ou",
+    "question-4-items-02": "Une personne qui a vécu avec la personne malade ou a eu un contact étroit et prolongé avec celle-ci (à moins de deux mètres) pendant qu’elle était contagieuse; ou",
+    "question-4-items-03": "une personne qui a eu un contact direct avec des fluides corporels infectieux de la personne malade (qui était, par exemple, à proximité lorsque la personne malade a toussé ou éternué) sans porter l’équipement de protection individuelle recommandé.",
 
-    "question-5-title": "Au cours des 14 derniers jours, avez-vous fourni des soins ou eu un contact étroit avec un cas symptomatique confirmé ou suspecté de la COVID-19?",
-    "question-5-title-sub": "Une personne ayant eu des contacts étroits est définie comme:",
-    "question-5-items-01": "Une personne qui a fourni des soins à la personne malade et comprend les travailleurs de la santé, les membres de la famille ou autres soignants, ou une personne qui a eu d’autres contacts physiques étroits similaires ou sans utilisation cohérente et appropriée d’équipements de protection individuelle; ou",
-    "question-5-items-02": "Une personne qui a vécu avec la personne malade ou a eu un contact étroit et prolongé avec celle-ci (à moins de deux mètres) pendant qu’elle était contagieuse; ou",
-    "question-5-items-03": "une personne qui a eu un contact direct avec des fluides corporels infectieux de la personne malade (qui était, par exemple, à proximité lorsque la personne malade a toussé ou éternué) sans porter l’équipement de protection individuelle recommandé.",
+    "question-5-title": "Avez-vous voyagé à l’extérieur du Canada (y compris aux États-Unis) au cours des 14 derniers jours?",
 
     "question-6-title": "Avez-vous eu un contact étroit avec une personne qui a voyagé à l’extérieur du Canada au cours des 14 derniers jours et qui est tombée malade ou qui a eu les symptômes suivants:",
     "question-6-items-01": "Apparition ou aggravation de toux; essoufflement ou difficulté respiratoire; température égale ou supérieure à 38 °C",
