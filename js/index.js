@@ -96,7 +96,7 @@ $(document).ready(function($) {
         // Change radio buttons
         $('input[type=radio]').change(function() {
             var Question = $(this).data('question');
-            if (Question == 2) {
+            if (Question == 6) {
                 ShowSubmitPopup();
             } else {
                 ShowQuestionBox(Question + 1);
@@ -110,8 +110,7 @@ $(document).ready(function($) {
         // Press Submit
         $("input[type=submit]").click(function(event) {
             event.preventDefault();
-            var ResultArray = GetResultArray();
-            //var ResultArray = JSON.stringify(GetResultArray());
+            var ResultArray = JSON.stringify(GetResultArray());
             console.log(ResultArray);
             $.post("https://pi.invendr.com/dev2/update.php", {
                     user: url('?user'),
