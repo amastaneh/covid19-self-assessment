@@ -43,13 +43,13 @@
     "question-3-items-10": "Gastrointestinal symptoms (abdominal pain, diarrhea, vomiting)",
     "question-3-items-11": "Feeling very unwell",
 
-    "question-4-title": "Have you travelled to any countries outside Canada (including the United States) within the last 14 days?",
+    "question-4-title": "Within the last 14 days have you provided care or have close contact with a symptomatic person known or suspected to have COVID-19?",
+    "question-4-title-sub": "A close contact is defined as a person who:",
+    "question-4-items-01": "Provided care for the individual, including healthcare workers, family members or other caregivers, or who had other similar close physical contact without consistent and appropriate use of personal protective equipment; or",
+    "question-4-items-02": "Lived with or otherwise had close prolonged contact (within 2 metres) with the person while they were infectious; or",
+    "question-4-items-03": "Had direct contact with infectious bodily fluids of the person (e.g. was coughed or sneezed on) while not wearing recommended personal protective equipment",
 
-    "question-5-title": "Within the last 14 days have you provided care or have close contact with a symptomatic person known or suspected to have COVID-19?",
-    "question-5-title-sub": "A close contact is defined as a person who:",
-    "question-5-items-01": "Provided care for the individual, including healthcare workers, family members or other caregivers, or who had other similar close physical contact without consistent and appropriate use of personal protective equipment; or",
-    "question-5-items-02": "Lived with or otherwise had close prolonged contact (within 2 metres) with the person while they were infectious; or",
-    "question-5-items-03": "Had direct contact with infectious bodily fluids of the person (e.g. was coughed or sneezed on) while not wearing recommended personal protective equipment",
+    "question-5-title": "Have you travelled to any countries outside Canada (including the United States) within the last 14 days?",
 
     "question-6-title": "Have you had close contact with a person who travelled outside of Canada in the last 14 days who has become ill or experienced the following conditions?",
     "question-6-items-01": "New or worsening cough; shortness of breath or difficulty breathing; temperature equal to or over 38°C",

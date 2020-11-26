@@ -1,5 +1,4 @@
 var questionnaire_max_question_visited = 0;
-var questionnaire_first_yes = 0;
 
 /**
  * Upadte and re-fill strings with current localization
@@ -41,14 +40,15 @@ var HideQuestionBoxFrom = function(index) {
  * jQuery show modal result box
  */
 var ShowSubmitPopup = function() {
-    var ResultComment = (questionnaire_first_yes > 0) ? "result-yes" : "result-no";
+    var ResultArray = GetResultArray();
+    var ResultSum = GetResultSum(ResultArray);
+    var ResultComment = (ResultSum > 0) ? "result-yes" : "result-no";
     $("#modal-text").text($.i18n(ResultComment));
     $("#modal-result").modal({
         escapeClose: true,
         clickClose: true,
         showClose: true
     });
-
 }
 
 /**
@@ -57,6 +57,23 @@ var ShowSubmitPopup = function() {
 $("#fade").modal({
     fadeDuration: 100
 });
+
+/**
+ * Return values of radio-buttons
+ */
+var GetResultArray = function() {
+    return $("input[type='radio']:checked").map(function() {
+        return $(this).val();
+    });
+}
+
+var GetResultSum = function(arr) {
+    var Result = 0;
+    for (var i = 0; i < arr.length; i++) {
+        Result += Number(arr[i]);
+    }
+    return Result;
+}
 
 /**
  * The page Document Object Model (DOM) is ready for JavaScript code
@@ -78,12 +95,7 @@ $(document).ready(function($) {
         $('input[type=radio]').change(function() {
             var Value = this.value;
             var Question = $(this).data('question');
-            if (Value == 1) {
-                HideQuestionBoxFrom(Question);
-                questionnaire_first_yes = Question;
-                ShowSubmitPopup();
-            } else if (Question == 6) {
-                questionnaire_first_yes = 0;
+            if (Question == 6) {
                 ShowSubmitPopup();
             } else {
                 ShowQuestionBox(Question + 1);
@@ -99,7 +111,7 @@ $(document).ready(function($) {
             event.preventDefault();
             $.post("https://pi.invendr.com/dev2/update.php", {
                     user: url('?user'),
-                    results: questionnaire_first_yes,
+                    results: GetResultArray(),
                     flag: 'wellness_check'
                 })
                 .done(function(data) {
