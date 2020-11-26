@@ -108,9 +108,10 @@ $(document).ready(function($) {
         // Press Submit
         $("input[type=submit]").click(function(event) {
             event.preventDefault();
+            var ResultArray = GetResultArray();
             $.post("https://pi.invendr.com/dev2/update.php", {
                     user: url('?user'),
-                    results: GetResultArray(),
+                    results: JSON.stringify(ResultArray),
                     flag: 'wellness_check'
                 })
                 .done(function(data) {
