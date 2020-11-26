@@ -93,7 +93,6 @@ $(document).ready(function($) {
         });
         // Change radio buttons
         $('input[type=radio]').change(function() {
-            var Value = this.value;
             var Question = $(this).data('question');
             if (Question == 6) {
                 ShowSubmitPopup();
