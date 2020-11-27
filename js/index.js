@@ -62,9 +62,11 @@ $("#fade").modal({
  * Return values of radio-buttons
  */
 var GetResultArray = function() {
-    return $("input[type='radio']:checked").map(function() {
-        return $(this).val();
+    var Result = new Array();
+    $("input[type='radio']:checked").each(function() {
+        Result.push($(this).val());
     });
+    return Result;
 }
 
 var GetResultSum = function(arr) {
@@ -108,10 +110,11 @@ $(document).ready(function($) {
         // Press Submit
         $("input[type=submit]").click(function(event) {
             event.preventDefault();
-            var ResultArray = GetResultArray();
-            $.post("https://pi.invendr.com/dev2/update.php", {
+            var ResultArray = JSON.stringify(GetResultArray());
+            console.log(ResultArray);
+            $.post("#", {
                     user: url('?user'),
-                    results: JSON.stringify(ResultArray),
+                    results: ResultArray,
                     flag: 'wellness_check'
                 })
                 .done(function(data) {
