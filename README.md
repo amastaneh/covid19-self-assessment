@@ -1,4 +1,4 @@
-# Wellness Check (aka COVID-19 Symptom Self-Assessment)
+# COVID-19 Symptom Self-Assessment (aka Wellness Check)
 
 If you believe you have been exposed to COVID-19 or have symptoms similar to COVID-19, you are invited to complete this COVID-19 Symptom Self-Assessment to get a recommendation on the next steps to follow, according to your condition. This assessment can be completed for your child or for another member of your family.
 
