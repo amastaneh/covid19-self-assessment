@@ -112,7 +112,7 @@ $(document).ready(function($) {
             event.preventDefault();
             var ResultArray = JSON.stringify(GetResultArray());
             console.log(ResultArray);
-            $.post("https://pi.invendr.com/dev2/update.php", {
+            $.post("#", {
                     user: url('?user'),
                     results: ResultArray,
                     flag: 'wellness_check'

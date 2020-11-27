@@ -5,8 +5,7 @@ If you believe you have been exposed to COVID-19 or have symptoms similar to COV
 Important: This self-assessment tool mockup is not intended to be a substitute for medical attention. 
 Always follow the healthcare professional’s instructions.
 
-Special thanks to my dearest friend and manager Abdollah (@abdollah)
-
+Special thanks to my friend and manager Abdollah (@abdollah)
 
 ## V1.4
 - User must complete all the questions before they submit the form  
